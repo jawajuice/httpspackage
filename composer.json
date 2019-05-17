@@ -1,0 +1,16 @@
+{
+    "name": "wirelab/createadmin",
+    "description": "Admin user creation middleware for Laravel.",
+    "authors": [
+        {
+            "name": "Matic Lukas",
+            "email": "matic@wirelab.nl"
+        }
+    ],
+    "require": {},
+     "autoload": {
+            "psr-4": {
+                "wirelab\\createadmin\\": "src/"
+            }
+        }
+}
