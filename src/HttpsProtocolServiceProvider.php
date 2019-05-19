@@ -1,5 +1,7 @@
     <?php
+
     namespace Wirelab\HttpsProtocol;
+    
     use Illuminate\Support\ServiceProvider;
     class HttpsProtocolServiceProvider extends ServiceProvider {
         public function boot()
