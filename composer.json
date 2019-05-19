@@ -11,15 +11,15 @@
         "illuminate/support": "^5.8"
     },
     "autoload": {
-    "psr-4": {
-        "Wirelab\\HttpsProtocol\\": "src/"
+        "psr-4": {
+            "Wirelab\\HttpsProtocol\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Wirelab\\HttpsProtocol\\HttpsProtocolServiceProvider"
+            ]
+        }
     }
-},
-"extra": {
-    "laravel": {
-        "providers": [
-            "Wirelab\\HttpsProtocol\\HttpsProtocolServiceProvider"
-        ]
-    }
-}
 }
