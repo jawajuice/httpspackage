@@ -1,16 +1,25 @@
 {
-    "name": "wirelab/createadmin",
-    "description": "Admin user creation middleware for Laravel.",
+    "name": "wirelab/httpsprotocol",
+    "description": "Https protocol middleware.",
     "authors": [
         {
             "name": "Matic Lukas",
             "email": "matic@wirelab.nl"
         }
     ],
-    "require": {},
-     "autoload": {
-            "psr-4": {
-                "wirelab\\createadmin\\": "src/"
-            }
-        }
+    "require": {
+        "illuminate/support": "^5.8"
+    },
+    "autoload": {
+    "psr-4": {
+        "Wirelab\\HttpsProtocol\\": "src/"
+    }
+},
+"extra": {
+    "laravel": {
+        "providers": [
+            "Wirelab\\HttpsProtocol\\HttpsProtocolServiceProvider"
+        ]
+    }
+}
 }
