@@ -1,5 +1,5 @@
 <?php
-namespace Wirelab\HttpsProtocol;
+namespace Wirelab\HttpsProtocol
 use Closure;
 use Illuminate\Support\Facades\App;
 

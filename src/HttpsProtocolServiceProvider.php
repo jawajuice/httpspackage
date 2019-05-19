@@ -5,10 +5,12 @@ namespace Wirelab\HttpsProtocol;
     class HttpsProtocolServiceProvider extends ServiceProvider {
         public function boot()
         {
+            $router = $this->app['router'];
+            $router->pushMiddlewareToGroup('web', HttpsProtocol::class);
         }
         public function register()
         {
-            $this->app['router']->middleware('HttpsProtocol', 'wirelab\httpsprotocol\HttpsProtocol');
+            //$router = $this->app['router'];
         }
     }
     ?>
